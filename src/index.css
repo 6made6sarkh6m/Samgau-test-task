@@ -1,13 +1,77 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Roboto Condensed';
+  background: rgba(0, 0, 0, 0.822);
+
+}
+header{
+  padding: 50px 20px;
+}
+
+
+header h1{
+  text-align: center;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 100;
+
+  
+}
+main{
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+section{
+  padding:15px;
+}
+
+.searchbar{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #EEE;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.822);
+  height: 20px;
+  transition: 0.5s  ease-out;
+
+}
+.searchbar:focus{
+  box-shadow: 0px 0px 8px 3px #FFD34A;
+}
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+  
+}
+.movie-list .card{
+  width: 33%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.movie-list .card img{
+  display: block;
+  width: 100%;
+
+}
+
+.movie-list .card h3{
+  text-align: center;
+  color: #FFF;
 }
